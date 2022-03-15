@@ -8,7 +8,7 @@ on:
       # anything under a build/ folder will be used as testing the build processes.
       - 'build/*'
     tags:
-      - 'v*'
+      - '*'
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
