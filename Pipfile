@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pdbpp = "*"
+black = "*"
+
+[packages]
+docker = "*"
+fabric = "*"
+pytest = "*"
+pytest-axe = "*"
+pytest-check = "*"
+pytest-json-report = "*"
+pytest-repeat = "*"
+pytest-rerunfailures = "*"
+pytest-selenium = "*"
+pytest-test-groups = "*"
+pytest-xdist = "*"
+python-dateutil = "*"
+requests = "*"
+selenium = "*"
+selene = {git = "https://github.com/yashaka/selene.git",ref = "2.0.0b1"}
+fuzzbucket-client = "*"
+browsermob-proxy = "==0.8.0"
+
+[pipenv]
+allow_prereleases = true
