@@ -26,5 +26,11 @@ if [ x"$USER_ID" != x"0" -a x"$USER_ID" != x"1000" ]; then
     export LD_PRELOAD
 fi
 
+# add mitmproxy certificate to the system trusted certs
+if [ x"$MITMPROXY_CERT" != x"" -a -r $MITMPROXY_CERT ]; then
+    sudo cp $MITMPROXY_CERT /usr/local/share/ca-certificates/mitmproxy.crt
+    sudo update-ca-certificates
+fi
+
 # run the user's command
 exec "$@"
