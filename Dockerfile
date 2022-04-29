@@ -99,10 +99,10 @@ RUN set -ex; \
     echo "alias ls='ls --color=auto'" >> /etc/bash.bashrc; \
     echo "alias grep='grep --color=auto'" >> /etc/bash.bashrc;
 
-# Create user named "docker" with no password
-RUN useradd --create-home --shell /bin/bash docker \
-    && passwd docker -d \
-    && adduser docker sudo
+# Create user named "user" with no password
+RUN useradd --create-home --shell /bin/bash user \
+    && passwd user -d \
+    && adduser user sudo
 
 # Don't require a password for sudo
 RUN sed -i 's/^\(%sudo.*\)ALL$/\1NOPASSWD:ALL/' /etc/sudoers

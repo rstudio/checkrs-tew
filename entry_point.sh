@@ -9,21 +9,23 @@
 USER_ID=$(id -u)
 GROUP_ID=$(id -g)
 
+# set the new passwd and group files
+export NSS_WRAPPER_PASSWD=/tmp/passwd.nss_wrapper
+export NSS_WRAPPER_GROUP=/tmp/group.nss_wrapper
+export LD_PRELOAD=/usr/lib/libnss_wrapper.so
+
+cp /etc/passwd ${NSS_WRAPPER_PASSWD}
+cp /etc/group ${NSS_WRAPPER_GROUP}
+
 if [ x"$USER_ID" != x"0" -a x"$USER_ID" != x"1000" ]; then
-
-    # set the new passwd and group files
-    NSS_WRAPPER_PASSWD=/tmp/passwd.nss_wrapper
-    NSS_WRAPPER_GROUP=/tmp/group.nss_wrapper
-
     # overwrite the old uid and gid for the user
-    cat /etc/passwd | sed -e "s/^docker:x:1000:1000:/docker:x:$USER_ID:$GROUP_ID:/" > $NSS_WRAPPER_PASSWD
-    cat /etc/group | sed -e "s/^docker:x:1000:/docker:x:$GROUP_ID:/" > $NSS_WRAPPER_GROUP
+    sed -i -e "s/^user:x:1000:1000:/user:x:$USER_ID:$GROUP_ID:/" $NSS_WRAPPER_PASSWD
+    sed -i -e "s/^user:x:1000:/user:x:$GROUP_ID:/" $NSS_WRAPPER_GROUP
+fi
 
-    export NSS_WRAPPER_PASSWD
-    export NSS_WRAPPER_GROUP
-
-    LD_PRELOAD=/usr/lib/libnss_wrapper.so
-    export LD_PRELOAD
+if [ -e /var/run/docker.sock ] ; then
+    # allow users in the docker container to access /var/run/docker.sock
+    sudo chmod 666 /var/run/docker.sock
 fi
 
 # add mitmproxy certificate to the system trusted certs
