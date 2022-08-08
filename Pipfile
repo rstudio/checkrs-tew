@@ -22,7 +22,7 @@ pytest-xdist = "*"
 python-dateutil = "*"
 requests = "*"
 selenium = "*"
-selene = {git = "https://github.com/yashaka/selene.git",ref = "2.0.0b1"}
+selene = {git = "https://github.com/yashaka/selene.git",ref = "1.0.0a13"}
 fuzzbucket-client = "*"
 browsermob-proxy = "==0.8.0"
 pytest-timeout = "*"
