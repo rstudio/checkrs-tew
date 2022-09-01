@@ -335,7 +335,7 @@
                 "sha256:7f1f32e08c2ee751e59e7f5880235b46e83496adc5cba5a01ca218c6fe81333d",
                 "sha256:8b6523a1a3af73c317bdae97b722dfb55a7336733d1ad411eb4a4931347ba77a"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_full_version < '4.0.0'",
             "version": "==1.4.2"
         },
         "pytest-check": {
@@ -383,7 +383,7 @@
                 "sha256:39261ee0086f17649b180baf2a8633e1922a4c4b6fcc28a2de7d8127a82541bf",
                 "sha256:fcd2f416f15be295943527b3c8ba16a44ae5a7141939c90c3dc5ce9d167cf2a5"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
             "version": "==2.0.2"
         },
         "pytest-repeat": {
@@ -430,7 +430,7 @@
                 "sha256:ccf4afcd70de1f5f18b4463758a19f24647a9def1805f675e80db851c9e00ac0",
                 "sha256:f79851e4c92a94c93d3f1d02377b5ac97cc8800392e87d108d2cbfda774ecc2a"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_full_version < '4.0.0'",
             "version": "==1.9.0"
         },
         "pytest-xdist": {
@@ -503,11 +503,11 @@
         },
         "systemstat": {
             "hashes": [
-                "sha256:6c083a37789eb609ee46abceefeb4dc14a05386186ca9677d1a7f026b6ffb82c",
-                "sha256:7b76f2d5c704d6341e6fe4a087c9aa85c8c8f3b03721229e511e9e7e80ca01fa"
+                "sha256:20e4f8e7c7962dc5dc560cf8a0ad675e8435901b94524b1a28c9939bc527476c",
+                "sha256:e43d3e92f39ecc400f54104bfdad8b5118cd45eccb5b2ce838480a4202bf49b0"
             ],
             "index": "pypi",
-            "version": "==0.0.1"
+            "version": "==0.1.0"
         },
         "tenacity": {
             "hashes": [
@@ -533,12 +533,11 @@
             "version": "==4.64.0"
         },
         "urllib3": {
-            "extras": [],
             "hashes": [
                 "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
                 "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5' and python_version < '4.0'",
             "version": "==1.26.12"
         },
         "webdriver-manager": {
