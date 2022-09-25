@@ -26,6 +26,8 @@ selene = {git = "https://github.com/yashaka/selene.git",ref = "2.0.0b1"}
 fuzzbucket-client = "*"
 browsermob-proxy = "==0.8.0"
 pytest-timeout = "*"
+systemstat = "*"
+pytest-html-report-merger = "*"
 
 [pipenv]
 allow_prereleases = true
