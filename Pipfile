@@ -28,6 +28,8 @@ browsermob-proxy = "==0.8.0"
 pytest-timeout = "*"
 systemstat = "*"
 pytest-html-report-merger = "*"
+showfails = "*"
+pytest-reportportal = "*"
 
 [pipenv]
 allow_prereleases = true
