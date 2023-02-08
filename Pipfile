@@ -22,7 +22,7 @@ pytest-xdist = "*"
 python-dateutil = "*"
 requests = "*"
 selenium = "*"
-selene = {git = "https://github.com/yashaka/selene.git",ref = "2.0.0b1"}
+selene = "==1.0.2"
 fuzzbucket-client = "*"
 browsermob-proxy = "==0.8.0"
 pytest-timeout = "*"
@@ -30,6 +30,7 @@ systemstat = "*"
 pytest-html-report-merger = "*"
 showfails = "*"
 pytest-reportportal = "*"
+rsa = "*"
 
 [pipenv]
 allow_prereleases = true
