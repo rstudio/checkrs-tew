@@ -30,6 +30,7 @@ systemstat = "*"
 pytest-html-report-merger = "*"
 showfails = "*"
 pytest-reportportal = "*"
+rsa = "*"
 
 [pipenv]
 allow_prereleases = true
