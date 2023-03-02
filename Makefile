@@ -12,3 +12,6 @@ pyenv:
 
 build:
 	docker build -t ${ORG}/${PROJECT}:${TAG} .
+
+run:
+	docker run --rm -it  ${ORG}/${PROJECT}:${TAG} bash
