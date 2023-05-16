@@ -32,6 +32,7 @@ showfails = "*"
 pytest-reportportal = "*"
 rsa = "*"
 posix-ipc = "*"
+decorator = "*"
 
 [pipenv]
 allow_prereleases = true
