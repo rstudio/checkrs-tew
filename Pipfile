@@ -21,7 +21,7 @@ pytest-test-groups = "*"
 pytest-xdist = "*"
 python-dateutil = "*"
 requests = "*"
-selenium = "*"
+selenium = "==4.9.0"
 selene = {git = "https://github.com/yashaka/selene.git",ref = "2.0.0rc2"}
 fuzzbucket-client = "*"
 browsermob-proxy = "==0.8.0"
@@ -33,6 +33,8 @@ pytest-reportportal = "*"
 rsa = "*"
 posix-ipc = "*"
 decorator = "*"
+selenium-axe-python = "*"
+py = "*"
 
 [pipenv]
 allow_prereleases = true
