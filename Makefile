@@ -5,6 +5,7 @@ PYTHON_VERSION=3.9.10
 
 pyenv:
 	pyenv install ${PYTHON_VERSION} --skip-existing
+	pyenv virtualenv-delete ${PROJECT} || true
 	pyenv virtualenv ${PYTHON_VERSION} ${PROJECT}
 	pyenv local ${PROJECT}
 	pip install pipenv
