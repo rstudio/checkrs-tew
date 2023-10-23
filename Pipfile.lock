@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6630a27e5538665256bde4acd5b241c218a75b2fadb7939bf53273e6a37f1032"
+            "sha256": "a7ddeaefd9339e21b0204eba192559342c3b96573b87ab2e35bfb006966fedfb"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -376,6 +376,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==41.0.4"
+        },
+        "databricks-sdk": {
+            "hashes": [
+                "sha256:054b7ff5603e1ef5f4e852e34df27ccd44efc2423845d8b9dd58b580d601b531",
+                "sha256:f36eee592c8e5d9cc36a8257522e5900d0c4eb2ecf0ce52d9f38073a6934ba0f"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==0.11.0"
         },
         "decorator": {
             "hashes": [
