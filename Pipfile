@@ -27,7 +27,7 @@ fuzzbucket-client = "*"
 browsermob-proxy = "==0.8.0"
 pytest-timeout = "*"
 systemstat = "*"
-pytest-html-report-merger = {git = "https://github.com/dskard/pytest-html-report-merger.git",ref = "dsk-pytest-html-4"}
+pytest-html-report-merger = "*"
 showfails = "*"
 pytest-reportportal = "*"
 rsa = "*"

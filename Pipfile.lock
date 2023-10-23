@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ef09fa19d368262d91cb354988d3ee64c2abb944d5feea657d64b3ac5e807351"
+            "sha256": "6630a27e5538665256bde4acd5b241c218a75b2fadb7939bf53273e6a37f1032"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -838,9 +838,13 @@
             "version": "==4.0.2"
         },
         "pytest-html-report-merger": {
-            "git": "https://github.com/dskard/pytest-html-report-merger.git",
-            "markers": "python_version >= '3.7' and python_version < '4.0'",
-            "ref": "45ef76394dcf885a46f034f2261d921f0cd109de"
+            "hashes": [
+                "sha256:5f79e015996dd5dfadb7acea1731fbfce859661301c0738d4d67c5abdb97c6d8",
+                "sha256:687a309b7e34e494bafe5a6345b71f5e0ebb522f31ef9a283ddc0d2d7caac531"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.9' and python_version < '4.0'",
+            "version": "==0.1.2"
         },
         "pytest-json-report": {
             "hashes": [
