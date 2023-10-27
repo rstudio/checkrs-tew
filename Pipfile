@@ -35,6 +35,7 @@ posix-ipc = "*"
 selenium-axe-python = "*"
 py = "*"
 databricks-sdk = "*"
+manageritm-client = "*"
 
 [pipenv]
 allow_prereleases = true
